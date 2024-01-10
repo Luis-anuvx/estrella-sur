@@ -1,0 +1,30 @@
+
+### listar
+GET http://127.0.0.1:8000/api/persona
+Accept: application/json
+
+#### guardar
+POST http://127.0.0.1:8000/api/persona
+Content-Type: application/json
+Accept: application/json
+
+{
+    "ci": "6703313",
+    "nombres": "Luis Adolfo",
+    "paterno": "Limachi",
+    "materno": "Armijo",
+    "direccion": "15 de mayo # 126"
+}
+
+### actualizar
+PUT http://127.0.0.1:8000/api/persona/1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "ci": "67033133",
+    "nombres": "Luis Adolfoo",
+    "paterno": "Limachii",
+    "materno": "Armijoo",
+    "direccion": "15 de mayo # 1266"
+}
